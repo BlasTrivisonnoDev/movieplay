@@ -1,0 +1,165 @@
+.container-details{
+    width: 76%;
+    margin: 10px auto;
+    padding: 10px;
+    
+    
+    
+}
+
+.information-main{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.img-poster{
+    width: 130%;
+  
+}
+
+.img-poster img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+
+
+.information{
+    margin-left: 10px;
+}
+
+.title-detail{
+    text-align: left;
+    font-size: 40px;
+    margin: 0;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+
+}
+
+.details > p {
+    margin-right: 15px;
+}
+
+.tagline{
+    margin-top:30px;
+}
+
+
+.details_votes{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.generoDetails h2{
+    text-align: left;
+    font-size: 40px;
+    margin: 0;
+}
+
+
+
+.category-title{
+    text-align: left;
+    font-size: 30px;
+    margin: 20px 0 ;
+}
+
+
+.genero{
+    margin: 0 10px;
+    margin-bottom: 0px;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #333333;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.genero:first-child{
+    margin-left: 0;
+}
+
+.genero:hover {
+    background-color: #1d3801;
+  }
+
+
+
+.description{
+    text-align: left;
+    font-size: 20px;
+    margin: 20px 0 ;
+}
+
+#title-cast,#title-trailer,#title-recomendadas{
+    
+    margin: 50px 0 20px 0;
+    font-family: Ubuntu;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    
+
+}
+
+.container-details .carousel{
+    width: 100%;
+}
+
+
+
+
+.trailer{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    height: 500px;
+}
+
+iframe{   
+  width: 100%;
+  height: 100%;
+}
+
+
+.containerRelated.containerMovies{
+    width: 100% !important;
+}
+
+
+@media (max-width: 717px) {
+
+
+    .information-main{
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 95%;
+        height: 200px;
+    }
+}
+
+
+
+

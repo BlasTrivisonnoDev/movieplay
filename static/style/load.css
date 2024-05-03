@@ -1,0 +1,36 @@
+.loadSlider{
+    min-height: 600px;
+    margin-top: 15%;
+    min-width: 90%;
+    background-color: #eeeaf2;
+    animation: loading-skeleton infinite 1.5s;
+}
+
+.scrollLoading{
+    height: 300px;
+    width: 100%;
+    animation: loading-skeleton infinite 1.5s;
+    background-color: #eeeaf2;
+
+
+    
+}
+
+.loadContainerSeguido{
+    min-height: 400px;
+    margin-top: 15%;
+    min-width: 100%;
+    background-color: #eeeaf2;
+    animation: loading-skeleton infinite 1.5s;
+}
+
+/* animations */
+@keyframes loading-skeleton {
+    0%,100% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%    
+    }
+}
+    

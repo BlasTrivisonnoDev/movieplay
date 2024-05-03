@@ -1,0 +1,129 @@
+.carousel {
+    /* Ensure that the contents flow horizontally */
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 326px;
+    margin: 10px auto;
+}
+
+.carousel.vertical {
+    flex-direction: column;
+}
+
+/* 2018 spec - For Safari 11, Chrome 69+ */
+.carousel.snap {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Needed to work on iOS Safari */
+}
+
+.carousel.snap>div {
+    scroll-snap-align: center;
+}
+
+.carousel.snap.vertical {
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+}
+
+
+
+/* 2015 spec - For Firefox, Edge, IE */
+.carousel.snap {
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+    -ms-scroll-snap-points-x: repeat(100%);
+}
+
+.carousel.snap.vertical {
+    scroll-snap-points-x: initial;
+    -ms-scroll-snap-points-x: initial;
+    scroll-snap-points-y: repeat(100%);
+    -ms-scroll-snap-points-y: repeat(100%);
+}
+
+
+
+
+.carousel>div {
+    min-width: 20%;
+    min-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.carousel>div:first-child {
+    margin-left: 0;
+}
+
+.title-container {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.carousel>div img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 6px;
+    
+
+    /* width of the entire scrollbar */
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #262626;
+    margin-top: 100px;
+    /* color of the tracking area */
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #1d3801;
+    margin-top: 100px;
+    
+    /* color of the scroll thumb */
+    /* border-radius: 20px; */
+    /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+}
+
+.img-cast:hover,.caroulsel img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+
+
+@media (max-width: 717px) {
+
+
+    /* el tamaño de la imagen cambia */
+    .carousel>div{
+        min-width: 90%;
+    }
+
+    /* el carouel es mas alto */
+    .carousel{
+        height: 378px;
+    }
+
+
+}
